@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #e4e5e6;
+    color: white;
+}
+
+/*CABEÇALHO------------------*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background-color: #2f1a41;
+    box-shadow: 1px 1px black;
+    text-align: center;
+    gap: 15px;
+    
+}
+
+#header > h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+#header > p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*TABELA DE PREÇOS----------*/
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    position: relative;
+    top: -150px;
+    color: #1e2338;
+    justify-content: center;
+}
+
+#basico {
+    display: inline;
+    color: #b63434;
+    font-size: 20px;
+    
+}
+
+#popular {
+    position: relative;
+    color:white;
+    font-size: 14px;
+    align-items: center;
+    background-color: #b63434;
+    border-radius: 10px;
+    padding: 2px 10px;
+    
+}
+
+#ajustebasico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#button1{
+    position: relative;
+    top: 27%;
+}
+
+#button2{
+    position: relative;
+    top: 9%;
+}
+
+.infovalue{
+    margin: 8px 8px 24px 8px;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.price {
+    display: inline-flex;
+    margin: 8px 0 0 8px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.mes{
+    display: inline-flex;
+    color: #828799;
+    font-size: 18px;
+    
+}
+
+.paragrafo {
+    line-height: 18px;
+    margin: 20px 8px;
+    color: #828799;
+    font-size: 14px;
+}
+
+.linha{
+    margin: 16px 8px ;
+    border: 1px solid #eeeeee;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style-image: url('./assets/check.svg');
+    margin: 24px;
+}
+
+.button {
+    color: white;
+    border: none;
+    width: 100%;
+    background-color: #2f1a41;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'League Spartan', sans-serif;
+    transition: background-color .2s;
+}
+
+.button:hover{
+    background-color: #828799;
+    color: #2f1a41;
+}
+
+.balao {
+    padding: 25px;
+    display: block;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+@media screen and (max-device-width: 640px){
+
+    #container {
+        flex-direction: column;
+        top: auto;
+    }
+    
+}
+
+@media screen and (max-device-width: 900px){
+    
+    #button1 {
+        top: 30%;
+    }
+}
